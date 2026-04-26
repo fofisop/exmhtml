@@ -1,0 +1,52 @@
+
+<head>
+    <title>m</title>
+    <style>
+        .bg-image {
+    
+    background-image: url('mak.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.eyeshadow{
+    background: linear-gradient(#ff69b4,#000);
+      -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+}
+
+    </style>
+</head>
+<body>
+    <div id="face">
+    <h1> How is html like doing makeup?</h1>
+    <p>Html, css, and javascript can be explained through the idea of a face of makeup.</p>
+
+
+    <p>Html is like the face. The canvas with the head and the body, which can hold all of the makeup.</p>
+    <p>The "makeup" is CSS! It can give the face decorations and define shapes!</p>
+    <p> Javascript is the action. It's what keeps a face alive and not just a bland view. It gives the face life and movement!</p>
+    <p> Let's give this face a makeover with some CSS!</p>
+    <p>Well start with the foundation...</p>
+    <button onclick="applyBase()">Apply Foundation</button>
+    <p>Great! Now let's try for some eyeshadow...</p>
+     <button onclick="applyEye()">Apply Eyeshadow</button>
+
+    </div>
+    <script>
+        function applyBase() {
+    document.body.classList.toggle('bg-image');
+}
+function applyEye(){
+    const title = document.querySelectorAll('h1');
+    const paragraphs = document.querySelectorAll('p');
+    
+ title[0].classList.toggle('eyeshadow');
+     paragraphs.forEach(p => p.classList.toggle('eyeshadow'));
+}
+
+
+    </script>
+</body>
+</html>
