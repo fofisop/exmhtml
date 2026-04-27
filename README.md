@@ -1,1 +1,1 @@
-# exmhtml
+I want to show how makeup can have hacker value in this page! I've been learning so many cool css tricks through so many recent projects, thsi has been so fun! This was a nice way to combine some of my interests.
